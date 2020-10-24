@@ -1,4 +1,4 @@
-package inforkgodara;
+package main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ public class SalesOrderRegister extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sales_order_register.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/view/sales_order_register.fxml"));
         primaryStage.setTitle("Sales Order Register");
         primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
