@@ -6,12 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class SalesOrderRegister extends Application {
+public class SalesOrder extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/view/sales_order_register.fxml"));
-        primaryStage.setTitle("Sales Order Register");
+        Parent root = FXMLLoader.load(getClass().getResource("/view/add_sales_order.fxml"));
+        primaryStage.setTitle("Add Sales Order");
         primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.show();
     }
