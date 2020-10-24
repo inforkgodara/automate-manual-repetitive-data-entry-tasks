@@ -82,7 +82,7 @@ public class SalesOrder {
         Window owner = submitButton.getScene().getWindow();
 
         String addSalesOrderQuery = "INSERT INTO sales_orders(order_id, order_date, ship_date, ship_mode, customer_id, customer_name, segement,"
-                + "city, state, region, product_id, category, sub_category, product_name, sales, quantity, discount, profit) "
+                + "city, state, region, product_id, product_name, category, sub_category, sales, quantity, discount, profit) "
                 + "VALUES('" + orderId.getText() + "','" + orderDate.getText() + "','" + shipDate.getText() + "','" + shipMode.getText() + "','" + customerID.getText() + "','" + customerName.getText() + "','"
                 + segment.getText() + "','" + city.getText() + "','" + state.getText() + "','" + region.getText() + "','" + productID.getText() + "','" + productName.getText() + "','"
                 + category.getText() + "','" + subCategory.getText() + "'," + sales.getText() + "," + quantity.getText() + "," + discount.getText() + "," + profit.getText() + ")";
