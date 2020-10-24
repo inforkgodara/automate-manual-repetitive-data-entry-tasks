@@ -74,9 +74,10 @@ public class SalesOrder {
     @FXML
     protected void handleSubmitButtonAction(ActionEvent event) throws SQLException {
 
+        /* Form validation goes here. */
         DbConnection dbc = DbConnection.getDatabaseConnection();
         Connection con = dbc.getConnection();
-
+        int rs = 0;
         Statement stmt = con.createStatement();
 
         Window owner = submitButton.getScene().getWindow();
@@ -89,12 +90,17 @@ public class SalesOrder {
 
         System.out.println(addSalesOrderQuery);
 
-        int rs = stmt.executeUpdate(addSalesOrderQuery);
-
-        AlertHelper.showAlert(Alert.AlertType.CONFIRMATION, owner, "Information",
-                "Order no " + orderId.getText() + " saved successfully.");
-        this.clearForm();
-
+        try {
+            rs = stmt.executeUpdate(addSalesOrderQuery);
+            if (rs > 0) {
+                AlertHelper.showAlert(Alert.AlertType.INFORMATION, owner, "Information",
+                        "Order no " + orderId.getText() + " saved successfully.");
+                this.clearForm();
+            }
+        } catch (SQLException sql) {
+            AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Error",
+                    "Sales order could not save." + sql);
+        }
     }
 
     private void clearForm() {
