@@ -49,6 +49,6 @@ for column in excel_data['Row ID'].tolist():
     pyautogui.press('enter')
     pyautogui.press('tab')
     time.sleep(1)
-    if count == 5:
+    if count == 9:
         break;
     count = count + 1

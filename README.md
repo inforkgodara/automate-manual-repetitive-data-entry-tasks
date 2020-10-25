@@ -23,4 +23,4 @@ You must have following programs/packages in order to run this project.
 * You will see a form as a pop up where data needed to be entered from automation/Sales Orders.xlsx
 * Run python script which is in automation/script.py using py automation/script.py
 * The python script will execute and take the data from excel and start entering into the form and automate save.
-* The python script will run 10 times as there is a break statement in the python script.
+* The python script will iterate 10 times as there is a break statement in the python script.
