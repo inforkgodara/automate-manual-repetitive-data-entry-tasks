@@ -87,9 +87,7 @@ public class SalesOrder {
                 + "VALUES('" + orderId.getText() + "','" + orderDate.getText() + "','" + shipDate.getText() + "','" + shipMode.getText() + "','" + customerID.getText() + "','" + customerName.getText() + "','"
                 + segment.getText() + "','" + city.getText() + "','" + state.getText() + "','" + region.getText() + "','" + productID.getText() + "','" + productName.getText() + "','"
                 + category.getText() + "','" + subCategory.getText() + "'," + sales.getText() + "," + quantity.getText() + "," + discount.getText() + "," + profit.getText() + ")";
-
-        System.out.println(addSalesOrderQuery);
-
+        
         try {
             rs = stmt.executeUpdate(addSalesOrderQuery);
             if (rs > 0) {
@@ -100,6 +98,8 @@ public class SalesOrder {
         } catch (SQLException sql) {
             AlertHelper.showAlert(Alert.AlertType.ERROR, owner, "Error",
                     "Sales order could not save." + sql);
+            
+            System.out.println(sql);
         }
     }
 

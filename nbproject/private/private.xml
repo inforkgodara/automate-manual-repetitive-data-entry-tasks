@@ -3,7 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Ramesh%20Godara/Documents/NetBeansProjects/JavaFXApplication1/src/inforkgodara/sales_order_register.fxml</file>
+            <file>file:/C:/Users/Ramesh%20Godara/Documents/NetBeansProjects/AutomatedDataEntry/src/controller/SalesOrder.java</file>
+            <file>file:/C:/Users/Ramesh%20Godara/Documents/NetBeansProjects/AutomatedDataEntry/src/main/SalesOrder.java</file>
+            <file>file:/C:/Users/Ramesh%20Godara/Documents/NetBeansProjects/AutomatedDataEntry/src/database/DbConnection.java</file>
         </group>
     </open-files>
 </project-private>
