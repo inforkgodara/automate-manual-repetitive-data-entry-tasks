@@ -3,6 +3,9 @@
 This project contains two small modules one is sales order (JavaFX) which will take the data from the excel and other is automated 
 data entering module which is developed in python. 
 
+## Demo
+* Video clip on youtube of the script execution. https://youtu.be/_jb6M0vqCLs
+
 ## Prerequisites
 
 You must have following programs/packages in order to run this project.
@@ -24,3 +27,5 @@ You must have following programs/packages in order to run this project.
 * Run python script which is in automation/script.py using py automation/script.py
 * The python script will execute and take the data from excel and start entering into the form and automate save.
 * The python script will iterate 10 times as there is a break statement in the python script.
+
+Find it on youtube. https://youtu.be/_jb6M0vqCLs
