@@ -1,4 +1,4 @@
-# Automated Data Entry Tasks
+# Automate Your Repetitive Data Entry Tasks
 
 This project contains two small modules one is sales order (JavaFX) which will take the data from the excel and other is automated 
 data entering module which is developed in python. 
